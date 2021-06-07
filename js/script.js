@@ -1,23 +1,32 @@
 // programma dovrà consentire di calcolare il prezzo del panino 
 //selezionando o deselezionando gli ingredienti proposti.
-var createSum = document.getElementById('somma-button');
-var resultSumElement = document.getElementById('result-sum');
+
+//al click su somma-button, il js somma tutti i numeri selezionati
+
+var generaPrezzo = document.getElementById('somma-button');
+
+// il prezzo
+var price = document.getElementById('your-price');
+//var discountCoupon = 10;
+var userCoupon = document.getElementsByClassName("discount");
 
 
-createSum.addEventListener('click', function () {
- var priceBurger = 50;
- var resultSumInt = 0;
- var checkNum = document.getElementsByClassName('somma-check');
- for (var i = 0; i < checkNum.length; i++){
-     if (checkNum[i].checked){
+generaPrezzo.addEventListener('click', function () {
+ 
+ var resultSumInt = 0 ;
 
-         resultSumInt += parseInt(checkNum[i].value)
+ var check = document.getElementsByClassName('somma-check');
+ 
+ for (var i = 0; i < check.length; i++){
+     if (check[i].checked){
+
+         resultSumInt += parseInt(check[i].value)
      }
-     if(discount.value.length === 11){
-        
-     }
+   /*  if(userCoupon.value.length === 6){
+        resultSumInt -= resultSumInt * discountCoupon / 100;
+     }*/
  }
 
- resultSumElement.innerHTML = 'il risultato è ' + resultSumInt;
+ price.innerHTML = 'Il costo del tuo burger è:  ' +  " $ "  +  resultSumInt.toFixed(2);
 })
 
