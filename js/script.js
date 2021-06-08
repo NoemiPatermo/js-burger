@@ -5,11 +5,6 @@
 
 var generaPrezzo = document.getElementById('somma-button');
 
-// input nome burger
-var userBurger = document.getElementById("order-burger").value;
-//userBurger.innerHTML = burgerName;
-//nameBurger.innerHTML = userBurger;
-
 // il prezzo
 var price = document.getElementById('your-price');
 
@@ -23,6 +18,8 @@ generaPrezzo.addEventListener('click', function () {
     var resultSumInt = 20;
 
     var check = document.getElementsByClassName('somma-check');
+    var userBurger = document.getElementById("order-burger").value;
+    document.getElementById("burger-name").innerHTML = userBurger;
 
     for (var i = 0; i < check.length; i++){
         if (check[i].checked){
