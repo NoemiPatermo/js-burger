@@ -6,9 +6,9 @@
 var generaPrezzo = document.getElementById('somma-button');
 
 // input nome burger
-var userBurger= document.getElementById("order-burger").value;
-var nameBurger= document.getElementById("order-burger");
-nameBurger.innerHTML = userBurger;
+var userBurger = document.getElementById("order-burger").value;
+//userBurger.innerHTML = burgerName;
+//nameBurger.innerHTML = userBurger;
 
 // il prezzo
 var price = document.getElementById('your-price');
@@ -16,10 +16,10 @@ var price = document.getElementById('your-price');
 var userCoupon = document.getElementById("discount");
 
 // al click sul mio calculate, si avvia la funzione, prendendo come prezzo base 20
-//che verràincrementato nel ciclo for 
+//che verrà incrementato nel ciclo for 
 
 generaPrezzo.addEventListener('click', function () {
- 
+    
     var resultSumInt = 20;
 
     var check = document.getElementsByClassName('somma-check');
@@ -35,6 +35,7 @@ generaPrezzo.addEventListener('click', function () {
         document.getElementById('your-price').innerHTML =  " $ "  + parseInt(resultSumInt - 20 / 100).toFixed(2);
     } else{
         price.innerHTML =  " $ "  +  resultSumInt.toFixed(2);
+        userBurger.innerHTML = document.getElementsByClassName("burger-name");
     }
     })
 

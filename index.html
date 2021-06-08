@@ -10,58 +10,57 @@
 </head>
 <body> 
     <div class="container-burger container">
-         <header class="row position-relative pt-4">
+         <header class="row position-relative pt-4 mb-2">
              <h1>Create Your Burger</h1>
              <div class="burger-logo">
                  <img src="./img/burger-top.png" alt="">
              </div>
         </header>
-            <input type="text" id="order-burger" value="" >
+            <input type="text" id="order-burger" placeholder="Prego, inserire il nome del panino" value="" >
+            <h1 class="burger-name">mannaggia</h1>
             <h4>Ingredients</h4>
-        
-
         <form class= "row-burger row">
-        <div class="col-6 ">
-            <div class="ingredient m-3">
-                <img src="./img/cheese.svg" alt="cheese">
-                <label for="check-ingre1">Cheese</label>
-                <input type="checkbox" id= "check-ingre1" class="somma-check" value="10">
-                <label for="check-ingre1"class="color">add</label> <!--CHEESE 10-->
+            <div class="col-6 ">
+                <div class="ingredient m-3">
+                    <img src="./img/cheese.svg" alt="cheese">
+                    <label for="check-ingre1">Cheese</label>
+                    <input type="checkbox" id= "check-ingre1" class="somma-check" value="10">
+                    <label for="check-ingre1"class="color">add</label> <!--CHEESE 10-->
+                </div>
+                <div class="ingredient m-3">
+                    <img src="./img/fried-egg.svg" alt="egg">
+                    <label for="check-ingre2">Egg</label>
+                    <input type="checkbox" id= "check-ingre2" class="somma-check" value="20">
+                    <label for="check-ingre2" class="color">add</label> <!--EGG 20-->
+                </div>
+                <div class="ingredient m-3">
+                    <img src="./img/mustard.svg" alt="mustard">
+                    <label for="check-ingre3">Mustard</label>
+                    <input type="checkbox" id= "check-ingre3" class="somma-check" value="5">
+                    <label for="check-ingre3" class="color">add</label> <!--MUSTARD 5-->
+                </div>
             </div>
-            <div class="ingredient m-3">
-                <img src="./img/fried-egg.svg" alt="egg">
-                <label for="check-ingre2">Egg</label>
-                <input type="checkbox" id= "check-ingre2" class="somma-check" value="20">
-                <label for="check-ingre2" class="color">add</label> <!--EGG 20-->
-            </div>
-            <div class="ingredient m-3">
-                <img src="./img/mustard.svg" alt="mustard">
-                <label for="check-ingre3">Mustard</label>
-                <input type="checkbox" id= "check-ingre3" class="somma-check" value="5">
-                <label for="check-ingre3" class="color">add</label> <!--MUSTARD 5-->
-            </div>
-        </div>
 
-        <div class="col-6 ">
-            <div class="ingredient m-3">
-                <img src="./img/tomato.svg" alt="tomato">
-                <label for="check-ingre4">Tomato</label>
-                <input type="checkbox" id= "check-ingre4" class="somma-check" value="50">
-                <label for="check-ingre4" class="color">add</label> <!--TOMATO 50-->
+            <div class="col-6 ">
+                <div class="ingredient m-3">
+                    <img src="./img/tomato.svg" alt="tomato">
+                    <label for="check-ingre4">Tomato</label>
+                    <input type="checkbox" id= "check-ingre4" class="somma-check" value="50">
+                    <label for="check-ingre4" class="color">add</label> <!--TOMATO 50-->
+                </div>
+                <div class="ingredient m-3">
+                    <img src="./img/lettuce.svg" alt="lettuce">
+                    <label for="check-ingre5">Lettuce</label>
+                    <input type="checkbox" id= "check-ingre5" class="somma-check" value="15">
+                    <label for="check-ingre5" class="color">add</label> <!--LETTUCE 15-->
+                </div>
+                <div class="ingredient m-3">
+                    <img src="./img/ketchup.svg" alt="ketchup">
+                    <label for="check-ingre6"> Ketchup </label>
+                    <input type="checkbox" id= "check-ingre6" class="somma-check" value="25">
+                    <label for="check-ingre6" class="color">add</label> <!--KETCHUP 25-->
+                </div>
             </div>
-            <div class="ingredient m-3">
-                <img src="./img/lettuce.svg" alt="lettuce">
-                <label for="check-ingre5">Lettuce</label>
-                <input type="checkbox" id= "check-ingre5" class="somma-check" value="15">
-                <label for="check-ingre5" class="color">add</label> <!--LETTUCE 15-->
-            </div>
-            <div class="ingredient m-3">
-                <img src="./img/ketchup.svg" alt="ketchup">
-                <label for="check-ingre6"> Ketchup </label>
-                <input type="checkbox" id= "check-ingre6" class="somma-check" value="25">
-                <label for="check-ingre6" class="color">add</label> <!--KETCHUP 25-->
-            </div>
-        </div>
 
              <div class="final-price">
                 <label>Discount Coupon</label>  
