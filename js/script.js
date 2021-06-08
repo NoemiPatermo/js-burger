@@ -5,6 +5,11 @@
 
 var generaPrezzo = document.getElementById('somma-button');
 
+// input nome burger
+var userBurger= document.getElementById("order-burger").value;
+var nameBurger= document.getElementById("order-burger");
+nameBurger.innerHTML = userBurger;
+
 // il prezzo
 var price = document.getElementById('your-price');
 

@@ -8,7 +8,17 @@ body{
 }
 header{
     height: 90px;
-    background-color: rgb(229, 159, 50);
+    background-color: rgb(253,187,64); 
+}
+header h1{
+    font-size: 40px;
+    text-align: start;
+    font-weight: 500;
+}
+.burger-logo img{
+   position: absolute;
+    top: -25px;
+    right: -50px;
 }
 .ingredient{
 width: 70px;
