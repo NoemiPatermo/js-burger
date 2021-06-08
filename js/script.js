@@ -10,6 +10,8 @@ var price = document.getElementById('your-price');
 
 var userCoupon = document.getElementById("discount");
 
+// al click sul mio calculate, si avvia la funzione, prendendo come prezzo base 20
+//che verràincrementato nel ciclo for 
 
 generaPrezzo.addEventListener('click', function () {
  
