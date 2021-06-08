@@ -11,11 +11,13 @@
 <body> 
     <div class="container-burger container">
          <header>
+             <h1>Create Your Burger</h1>
+        </header>
             <input type="text" class="order-burger">
             <h3>Ingredients</h3>
-         </header>
+        
 
-    <form class= "row-burger row">
+        <form class= "row-burger row">
         <div class="col-6 ">
             <div class="ingredient m-3">
                 <img src="./img/cheese.svg" alt="cheese">
@@ -62,14 +64,20 @@
                 <label>Discount Coupon</label>  
                 <input type="text" id="discount" value="" class="input-discount">
                 <br>
-                <button id="somma-button">Calculate</button>
+                <div class="d-flex justify-content-center m-5">
+                    <button type="button" class="btn btn-outline-warning" id="somma-button">Calculate</button>
+                </div>
             </div>
         </form>
-    <footer>
-        <div id="your-price"></div>
-    </footer>
     
-    <script type="text/javascript"src="js/script.js"></script>
-    </div>
+        <footer class="row footer-price" >
+            <div class="d-flex justify-content-around align-items-center">
+                <h4>Your Price</h4>
+                <div id="your-price"></div>
+            </div>
+        </footer>
+    
+        <script type="text/javascript"src="js/script.js"></script>
+    </div>  
 </body>
 </html>

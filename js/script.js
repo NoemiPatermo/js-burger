@@ -27,9 +27,9 @@ generaPrezzo.addEventListener('click', function () {
         
     
     } if(userCoupon.value.length === 6){
-        document.getElementById('your-price').innerHTML = 'Il costo del tuo burger è:  ' +  " $ "  + parseInt(resultSumInt - 20 / 100).toFixed(2);
+        document.getElementById('your-price').innerHTML =  " $ "  + parseInt(resultSumInt - 20 / 100).toFixed(2);
     } else{
-        price.innerHTML = 'Il costo del tuo burger è:  ' +  " $ "  +  resultSumInt.toFixed(2);
+        price.innerHTML =  " $ "  +  resultSumInt.toFixed(2);
     }
     })
 
