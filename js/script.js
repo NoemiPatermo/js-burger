@@ -29,7 +29,7 @@ generaPrezzo.addEventListener('click', function () {
         
     
     } if(userCoupon.value.length === 6){
-        document.getElementById('your-price').innerHTML =  " $ "  + parseInt(resultSumInt - 20 / 100).toFixed(2);
+        document.getElementById('your-price').innerHTML =  " $ "  + parseInt(resultSumInt - (resultSumInt / 100) * 20).toFixed(2);
     } else{
         price.innerHTML =  " $ "  +  resultSumInt.toFixed(2);
         userBurger.innerHTML = document.getElementsByClassName("burger-name");
